@@ -1,0 +1,730 @@
+/* MOBILE MENU STARTS HERE */
+
+
+.toggle_button span {
+    height: 5px;
+    width: 40px;
+    background: var(--primaryColor);
+    border-radius: 50%;
+    display: block;
+    transition: 0.2s all linear;
+}
+
+.toggle_button {
+    display: none;
+}
+
+.toggle_button span:nth-child(2) {
+    margin: 5px 0;
+}
+
+.toggle_button.active span:nth-child(2) {
+    transform: translateX(45px);
+    opacity: 0;
+}
+
+.toggle_button.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle_button.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-9px, -9px);
+}
+
+@media (max-width: 1399px) {
+    #banner .slider .slides {
+        height: 580px;
+    }
+
+    #banner .bannerDots {
+        bottom: 15%;
+    }
+
+    #homefooter .footerinfo p {
+        width: 100%;
+    }
+
+    #customNavbar ul li .nav-link {
+        padding: 37px 15px;
+    }
+
+    .iconGroups ul li span,
+    .iconGroups ul li a {
+        margin: 0 5px;
+    }
+
+    .iconGroups ul li a .cartNumber {
+        width: 20px;
+        height: 20px;
+        font-size: 25px;
+        line-height: 24px;
+        left: 10px;
+        top: -4px;
+    }
+
+    .iconGroups ul li a .cartNumber {
+        width: 15px;
+        height: 15px;
+        font-size: 18px;
+        line-height: 18px;
+        left: 5px;
+        top: -4px;
+    }
+
+    .footerinfo .myaccount {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .support {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .openingtime {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .contactus {
+        width: 50% !important;
+    }
+
+    .footerinfo .newsletter {
+        width: 50% !important;
+    }
+
+    #homefooter .footerinfo .openingtime span {
+        display: block;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    #customNavbar ul li .nav-link:hover {
+        color: #fff;
+    }
+
+    nav .nav-item .submenu {
+        position: unset;
+        margin-top: 0;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        transition: none;
+        width: 100%;
+    }
+
+    a.nav-link span {
+        float: right;
+        transition: all linear .3s;
+        transform: rotate(-90deg);
+    }
+
+    a.nav-link span.active {
+        transform: rotate(0deg);
+    }
+
+
+    #dealsofthedays {
+        padding: 100px 0;
+    }
+
+    .iconGroups {
+        display: block;
+        order: 2;
+        width: 33.33%;
+        text-align: right;
+
+    }
+
+    .iconGroups ul li {
+        display: none;
+    }
+
+    .iconGroups ul li:nth-child(4) {
+        display: block;
+    }
+
+    .toggle_button span {
+        display: block;
+    }
+
+    .toggle_button {
+        display: block;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        position: absolute;
+        z-index: 99999999999;
+        background-color: var(--primaryColor);
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        transition: 0.5s all linear;
+        transform: translateX(-100%);
+    }
+
+    .navbar-expand-lg .navbar-collapse.active {
+        transform: translateX(0%);
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        display: block;
+        margin: 0 !important;
+    }
+
+    #customNavbar ul li .nav-link {
+        color: white;
+        padding: 20px 22.5px;
+        font-size: 20px;
+        font-weight: 800;
+
+    }
+
+    .collapse:not(.show) {
+        display: block !important;
+    }
+
+    a.navbar-brand {
+        order: 1;
+        width: 33.33%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .toggle_button {
+        order: 0;
+        width: 33.33%;
+    }
+
+    #latestnews .latestcardslider .cardcnt .latestcard p {
+        width: 100%;
+        height: auto;
+    }
+
+    #latestnews .latestcardslider .cardcnt .latestcard img {
+        width: 100%;
+        height: auto;
+    }
+
+    #latestnews .latestcardslider .cardcnt .latestcard span {
+        float: none;
+        display: block;
+    }
+
+    .shiping.col-lg-3 {
+        width: 50%;
+        padding: 10px;
+    }
+
+    #homefooter .footerwrapper .freeshiping .shiping::before {
+        display: none;
+    }
+
+    #homefooter .footerwrapper .freeshiping .shiping {
+        position: relative;
+        border-bottom: 2px solid #F1F1F1;
+        margin: 0 10px;
+        width: calc(50% - 20px);
+    }
+
+    .iconGroups ul li span,
+    .iconGroups ul li a {
+        font-size: 30px;
+    }
+
+    .iconGroups ul li a .cartNumber {
+        width: 20px;
+        height: 20px;
+        font-size: 25px;
+        line-height: 24px;
+        left: 10px;
+        top: -4px;
+    }
+
+    #homefooter .footerwrapper .freeshiping {
+        padding: 0px 0 0px 0px;
+    }
+
+    #banner .slider .slides {
+        height: 500px;
+    }
+
+    #banner .bannerDots {
+        bottom: 10%;
+    }
+
+    #banner .slider .slides .banner_cnt h2 {
+        font-size: 50px;
+    }
+
+    #banner .slider .slides .banner_cnt p {
+        font-size: 15px;
+    }
+
+    #banner .slider .slides .banner_cnt button {
+        margin-bottom: 50px;
+    }
+
+    #banner .bannerDots {
+        bottom: 15%;
+    }
+
+    /* #newProduct .arrow .leftArrow {
+        top: 40%;
+    }
+
+    #newProduct .arrow .rightArrow {
+        top: 40%;
+    } */
+
+    #cosmeticsBanner .cosmetics {
+        height: 327px;
+    }
+
+    .cosmetics_cnt h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .cosmetics_cnt p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #dealsofthedays .dealslider h3 {
+        font-size: 26px;
+    }
+
+    #dealsofthedays .dealslider p {
+        width: 100%;
+    }
+
+    .footerinfo .myaccount {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .support {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .openingtime {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .contactus {
+        width: 50% !important;
+    }
+
+    .footerinfo .newsletter {
+        width: 50% !important;
+    }
+
+    #homefooter .footerinfo .openingtime span {
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 95% !important;
+    }
+
+    #banner .slider .slides {
+        height: 412px;
+    }
+
+    #banner .bannerDots {
+        bottom: 5%;
+    }
+
+    #banner .bannerDots {
+        bottom: 10%;
+    }
+
+    /* #newProduct .arrow .leftArrow {
+        top: 43%;
+    }
+
+    #newProduct .arrow .rightArrow {
+        top: 43%;
+    } */
+
+    #cosmeticsBanner .cosmetics {
+        height: 280px;
+    }
+
+    .cosmetics_cnt h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .cosmetics_cnt p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 5px;
+    }
+
+    .cosmetics_cnt button {
+        font-size: 15px;
+        width: 145.36px;
+        height: 40px;
+        padding: 10px 10px 35px 10px;
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+
+    .footerinfo .myaccount {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .support {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .openingtime {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .contactus {
+        width: 50% !important;
+    }
+
+    .footerinfo .newsletter {
+        width: 50% !important;
+    }
+
+    #homefooter .footerinfo .openingtime span {
+        display: block;
+    }
+
+    .freeshiping .row {
+        margin-left: 60px;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+    #homefooter .footerinfo .newsletter form button,
+    #homefooter .footerinfo .newsletter form input,
+    #homefooter .footerinfo .newsletter form {
+        width: 100%;
+    }
+
+    #homefooter .footerinfo .newsletter form input {
+        margin-bottom: 15px;
+    }
+
+    #homefooter {
+        padding-top: 40px;
+    }
+
+    #homefooter .footerwrapper .freeshiping .shiping:nth-child(3),
+    #homefooter .footerwrapper .freeshiping .shiping:nth-child(4) {
+        border: 0;
+    }
+
+    #homefooter .footerwrapper .freeshiping {
+        transform: translateY(0);
+        margin-bottom: 30px;
+    }
+
+    #specialOffer .specialCnt p {
+        width: 100%;
+    }
+
+    #dealsofthedays .slide-one,
+    #dealsofthedays .slide-two {
+        height: auto;
+    }
+
+    .dealslide {
+        padding: 0 15px;
+    }
+
+    .slidecnt {
+        padding: 15px 20px;
+    }
+
+    #banner .slider .slides {
+        height: 412px;
+    }
+
+    #banner .slider .slides .banner_cnt h2 {
+        font-size: 50px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+
+    #banner .slider .slides .banner_cnt p {
+        color: #1D1D1D;
+        font-family: var(--secondaryFont);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        width: 454.909px;
+        height: 58px;
+    }
+
+    /* #newProduct .arrow .leftArrow {
+        top: 40%;
+    }
+
+    #newProduct .arrow .rightArrow {
+        top: 40%;
+    } */
+
+    #dealsofthedays {
+        padding: 100px 0;
+    }
+
+    #dealsofthedays .dealslider p {
+        width: 100%;
+    }
+
+    #specialOffer .specialCnt .specialText {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #specialOffer .container {
+        max-width: 100% !important;
+    }
+
+    .footerinfo .myaccount {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .support {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .openingtime {
+        width: 33.33% !important;
+    }
+
+    .footerinfo .contactus {
+        width: 50% !important;
+    }
+
+    .footerinfo .newsletter {
+        width: 50% !important;
+    }
+
+    #homefooter .footerinfo .openingtime span {
+        display: block;
+    }
+
+    #banner .slider .slides .banner_cnt p {
+        font-size: 15px;
+    }
+
+    #banner .bannerDots {
+        bottom: 10%;
+    }
+
+    /* #newProduct .arrow .leftArrow {
+        top: 43%;
+    }
+
+    #newProduct .arrow .rightArrow {
+        top: 43%;
+    } */
+
+    .productImage img {
+        width: 100%;
+    }
+
+    .footercnt {
+        flex-direction: row-reverse;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    #homefooter .footerwrapper .freeshiping .shiping .shipingtext h3 {
+        margin-top: 10px;
+    }
+
+    .freeshiping .row {
+        margin: 0;
+    }
+
+    .shiping {
+        text-align: center;
+    }
+
+    #specialOffer .specialVideo {
+        height: 400px;
+    }
+
+    .container {
+        max-width: 95% !important;
+    }
+
+    #banner .slider .slides .banner_cnt h2 {
+        font-size: 40px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+
+    #banner .slider .slides .banner_cnt p {
+        font-size: 14px;
+        width: 100%;
+        height: auto;
+    }
+
+    #banner .slider .slides {
+        height: 280px;
+    }
+
+    #banner .slider .slides .banner_cnt button {
+        width: 100.364px;
+        height: 41px;
+        font-size: 12px;
+        margin-top: 3px;
+        margin-bottom: 20px;
+    }
+
+    #banner .bannerDots {
+        bottom: 1%;
+    }
+
+    #cosmeticsBanner .cosmetics {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .cosmetics_cnt h2 {
+        line-height: 22px;
+    }
+
+    .cosmetics_cnt button {
+        font-size: 15px;
+        width: 130.36px;
+        height: 6px;
+        padding: 0px 10px 30px 10px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    #specialOffer .specialCnt p {
+        width: 100%;
+    }
+
+    #homefooter .footerwrapper .footerinfo .myaccount,
+    #homefooter .footerwrapper .footerinfo .support,
+    #homefooter .footerwrapper .footerinfo .openingtime,
+    #homefooter .footerwrapper .footerinfo .contactus,
+    #homefooter .footerwrapper .footerinfo .newsletter {
+        width: 100%;
+    }
+
+    .cosmetics_cnt p {
+        width: 100%;
+        height: auto;
+    }
+
+    #homefooter .footerinfo .newsletter form {
+        width: 100%;
+    }
+
+    #homefooter .footerwrapper .footerinfo div {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    a.navbar-brand img {
+        max-width: 100%;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .backToTopBtn button {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        line-height: 45px;
+        right: 35px;
+    }
+
+    #banner .slider .slides {
+        height: 240px;
+    }
+
+    #banner .slider .slides .banner_cnt h2 {
+        font-size: 25px;
+        margin-top: -10px;
+        margin-bottom: -12px;
+    }
+
+
+
+    .footerinfo .myaccount {
+        width: 100% !important;
+    }
+
+    .footerinfo .support {
+        width: 100% !important;
+    }
+
+    .footerinfo .openingtime {
+        width: 100% !important;
+    }
+
+    .footerinfo .contactus {
+        width: 100% !important;
+    }
+
+    .footerinfo .newsletter {
+        width: 100% !important;
+    }
+
+    .freeshiping .row {
+        margin-left: 0px;
+    }
+
+    #dealsofthedays .dealslider h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .dealslider {
+        padding: 0 10px;
+    }
+
+    .dealslide {
+        padding: 0 10px;
+    }
+
+    #homefooter .footerwrapper .freeshiping .shiping {
+        width: 100%;
+        border: 0;
+        margin: 10px 0;
+        background: var(--Comon-Colot, #FFF);
+    }
+
+    #homefooter .footerwrapper .freeshiping {
+        background: transparent;
+    }
+
+}
+
+
+
+
+
+/*  MOBILE MENU ENDS HERE */
